@@ -27,7 +27,13 @@ SECRET_KEY = 'django-insecure-p^5d2d$ofpp7zn10=5tj7&xroo4%o08pdz@ye#*b%w1wip7uy5
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    '16.170.224.115',
+    'localhost',
+    '127.0.0.1',
+    'backend.dreamabroad.online',
+    'www.backend.dreamabroad.online',
+]
 
 
 # Application definition
@@ -96,8 +102,11 @@ REST_FRAMEWORK = {
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
-   
+    "https://frontend.dreamabroad.online",
+    "https://backend.dreamabroad.online",
+    "https://www.backend.dreamabroad.online",
 ]
+
 
 
 CORS_ORIGIN_ALLOW_ALL = True
